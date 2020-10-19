@@ -33,3 +33,4 @@ for (PackageInfo info : packageInfoList) {
     }
 }
 ```
+![预览](https://github.com/yzj-minus/GetAppInfoJava/blob/main/ScreenShot/1.png)
