@@ -68,3 +68,4 @@ public class AppJsonData {
         return appJsonInfos;
     }
 }
+
