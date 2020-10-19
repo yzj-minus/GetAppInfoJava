@@ -1,5 +1,10 @@
 # 获取已安装App列表
 ```
+/**
+ * appPackageName appName appIcon appVersionCode appVersionName appFirstInstallTime
+ * appLastUpdateTime appLaunchActivityName appTargetSdkVersion appMinSdkVersion
+ * appDataDir appSourceDir appUid appFlags
+ */
 PackageManager pm = context.getPackageManager();
 List<PackageInfo> packageInfoList = pm.getInstalledPackages(0);
 for (PackageInfo info : packageInfoList) {
