@@ -1,4 +1,5 @@
 # 获取已安装App列表
+[AppDataJson](https://github.com/yzj-minus/GetAppInfoJava/blob/main/app/src/main/java/com/yzj/minus/getallapp/AppJsonData.java)
 ```
 /**
  * appPackageName appName appIcon appVersionCode appVersionName appFirstInstallTime
