@@ -13,18 +13,18 @@ for (PackageInfo info : packageInfoList) {
     long appLastUpdateTime = info.lastUpdateTime;
 
     try {
-		String appLaunchActivityName = pm.getLaunchIntentForPackage(appPackageName)
-			.getComponent().getClassName();
-		ApplicationInfo applicationInfo = pm.getApplicationInfo(appPackageName, 0);
-		int appTargetSdkVersion = applicationInfo.targetSdkVersion;
-		int appMinSdkVersion = android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N
-			? applicationInfo.minSdkVersion : -1;
-		String appDataDir = applicationInfo.dataDir;
-		String appSourceDir = applicationInfo.sourceDir;
-		int appUid = applicationInfo.uid;
-		int appFlags = applicationInfo.flags;
+	String appLaunchActivityName = pm.getLaunchIntentForPackage(appPackageName)
+		.getComponent().getClassName();
+	ApplicationInfo applicationInfo = pm.getApplicationInfo(appPackageName, 0);
+	int appTargetSdkVersion = applicationInfo.targetSdkVersion;
+	int appMinSdkVersion = android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N
+		? applicationInfo.minSdkVersion : -1;
+	String appDataDir = applicationInfo.dataDir;
+	String appSourceDir = applicationInfo.sourceDir;
+	int appUid = applicationInfo.uid;
+	int appFlags = applicationInfo.flags;
     } catch (Exception e) {
-		e.printStackTrace();
+	e.printStackTrace();
     }
 }
 ```
